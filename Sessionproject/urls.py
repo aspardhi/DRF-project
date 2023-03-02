@@ -24,6 +24,7 @@ router.register('viewset',views.Employeesdetails,basename='viewset1')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('',include(router.urls)),
     path('auth/',include('rest_framework.urls',namespace='rest_framework')), #normal json
 
